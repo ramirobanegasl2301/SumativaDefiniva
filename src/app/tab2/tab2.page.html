@@ -1,17 +1,18 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item (click)="navigateToHome()">
+      <ion-icon name="home" slot="start"></ion-icon>
+      <ion-label>Inicio</ion-label>
+    </ion-item>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-item (click)="navigateToProfile()">
+      <ion-icon name="person" slot="start"></ion-icon>
+      <ion-label>Perfil</ion-label>
+    </ion-item>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-item (click)="logout()">
+      <ion-icon name="log-out" slot="start"></ion-icon>
+      <ion-label>Cerrar sesión</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
